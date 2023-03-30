@@ -1,0 +1,18 @@
+﻿[{
+
+"ProductName":"Rice",
+"ProductWeight":"25",
+"ProductPricePerKg":"5"
+},
+{
+	"ProductName":"Wheat",
+	"ProductWeight":"35",
+	"ProductPricePerKg":"6"
+},
+{
+	"ProductName":"Pulse",
+	"ProductWeight":"65",
+	"ProductPricePerKg":"9"
+}
+
+]
