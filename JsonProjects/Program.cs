@@ -10,7 +10,8 @@ namespace JsonProjects
     {
         static void Main(string[] args)
         {
-            simpleJson simple = new simpleJson();
+            Console.WriteLine("Welcome to Json Projects");
+            SelectOptions select = new SelectOptions();
         }
     }
 }
