@@ -1,0 +1,25 @@
+﻿[
+{"StockName":"Cococola",
+"NumberOfShare":"5",
+"SharePrice":"140000",
+
+},
+{
+	"StockName":"Microsoft",
+"NumberOfShare":"9",
+"SharePrice":"180000",
+
+},
+{
+	"StockName":"Pepsi",
+"NumberOfShare":"8",
+"SharePrice":"130000",
+	
+},
+{
+	"StockName":"Yamaha",
+"NumberOfShare":"6",
+"SharePrice":"100000",
+}
+
+]

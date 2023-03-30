@@ -26,6 +26,7 @@ namespace JsonProjects
 
         }
         public simpleJson() {
+            Console.WriteLine("Reading from Product.json");
             var filepath = @"D:\Visual_studio_projects\TESTING\JsonProjects\JsonProjects\Product.json";
             string data = null;
             int i = 1;
