@@ -13,12 +13,13 @@ namespace JsonProjects
             string loopCheck = "n";
             while (loopCheck == "n")
             {
-                Console.WriteLine("\n 1)Simple Json list program and Inventory \n 2) Stock Management \n Enter Option");
+                Console.WriteLine("\n 1)Simple Json list program and Inventory \n 2) Stock Management \n 3) Commercial Data Processing(Stock Account) \n Enter Option");
                 int option = Convert.ToInt16(Console.ReadLine());
                 switch (option)
                 {   //UC1 and UC2
                     case 1: simpleJson simple = new simpleJson(); break;
                     case 2: StockManagement manage = new StockManagement();break;
+                    case 3: CommercialProcess.StockAccount commercial = new CommercialProcess.StockAccount(); break;
 
                     default: Console.Write("Enter the valid number"); break;
                 }

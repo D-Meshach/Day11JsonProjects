@@ -12,6 +12,8 @@ namespace JsonProjects
         {
             Console.WriteLine("Welcome to Json Projects");
             SelectOptions select = new SelectOptions();
+            // CommercialProcess comm = new CommercialProcess();
+           // CommercialProcess.StockAccount ac = new CommercialProcess.StockAccount();
         }
     }
 }
