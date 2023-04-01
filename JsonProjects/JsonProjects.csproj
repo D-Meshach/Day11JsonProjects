@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="commercialNode.cs" />
     <Compile Include="CommercialProcess.cs" />
+    <Compile Include="DeckOfCards.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SelectOptions.cs" />

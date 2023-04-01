@@ -11,9 +11,10 @@ namespace JsonProjects
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Json Projects");
-            SelectOptions select = new SelectOptions();
+             SelectOptions select = new SelectOptions();
             // CommercialProcess comm = new CommercialProcess();
-           // CommercialProcess.StockAccount ac = new CommercialProcess.StockAccount();
+            // CommercialProcess.StockAccount ac = new CommercialProcess.StockAccount();
+           // DeckOfCards decks = new DeckOfCards();
         }
     }
 }
