@@ -32,8 +32,9 @@ namespace JsonProjects
                 buy(28, "yur");
                 //Repetition of purchase not saved
                 buy(26, "yio");
-                sell(26, "yio");
+                sell(5, "yio");
                 sell(29, "rrf");
+                sell(48, "yio");
                 save("dodo");
                 
 
@@ -62,8 +63,10 @@ namespace JsonProjects
                     bool status = checkstatus(symbol);
                     if (status == true)
                     {
-                        Console.WriteLine("\n\n Buying stock symbol=" + comm.symbol);
-                        Console.WriteLine("Stock symbol="+symbol+"Already Present");
+                        updateExisting(symbol,amount);
+                        /*Console.WriteLine("\n\n Buying stock symbol=" + comm.symbol);
+                        Console.WriteLine("Stock symbol="+symbol+"Already Present");*/
+                        Console.WriteLine(symbol+"Updated Successfully -added amount="+amount);
                     }
                     else {
                         Console.WriteLine("\n\n Buying stock symbol=" + comm.symbol);
@@ -76,19 +79,44 @@ namespace JsonProjects
                 }
                  
             }
+            public void updateExisting(string symbol,int amount)
+            {
+                commercialNode comm=starthead;
+                while (comm != null)
+                {
+                    if (comm.symbol == symbol)
+                    {
+                        comm.amount += amount;
+                        break;
+                    }
+                    comm = comm.next;
+                }
+            }
             public void sell(int amount, string symbol)
             {
                 commercialNode comm = starthead,prevnode=comm;
+                Console.WriteLine("Selling" + symbol+"with amount="+amount);
                 while (comm != null)
                 {
-                    
-                    if (comm.amount == amount && comm.symbol == symbol)
+
+                    /*if (comm.amount == amount && comm.symbol == symbol)
                     {
                         prevnode.next = comm.next;
                         break;
+                    }*/
+                    if ( comm.symbol == symbol)
+                    {
+                        int tempAmount = comm.amount;
+                        comm.amount -= amount;
+                        if (comm.amount < 0)
+                        {
+                            comm.amount = tempAmount;
+                            Console.WriteLine("Insufficient Balance");
+                            break;
+                        }
                     }
-                    
-                    prevnode = comm;
+
+                    //prevnode = comm;
                     comm = comm.next;
                 }
                 Console.WriteLine("\n\nCurrent Stocks Available After selling");
